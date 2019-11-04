@@ -1,0 +1,532 @@
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE `depot_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('6958702983027556635', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-11-03 22:10:57.577351', '2019-11-03 22:10:57.577351')[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('6958702983027556635')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (0)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', 'cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7', '2019-11-03 22:10:57.639096', '2019-11-03 22:10:57.639096')[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (0)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-11-03 22:10:57.681579', '2019-11-03 22:10:57.681579')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `ar_internal_metadata`.`value` = 'test', `ar_internal_metadata`.`updated_at` = '2019-11-03 22:10:57.687301' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', 'cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7', '2019-11-03 22:10:57.693169', '2019-11-03 22:10:57.693169')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 192.168.64.180 at 2019-11-03 17:15:42 -0500
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leventince/.gem/ruby/2.6.3/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leventince/.gem/ruby/2.6.3/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.1ms | Allocations: 481)
+Completed 200 OK in 27ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 2755)
+
+
+[StatsD] Depot.request_time:348|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:0|d|#response_code:200,response_type:2xx,environment:development
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('6958702983027556635', 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateProducts (20191103222513)
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE `products` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191103222513')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('6958702983027556635')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/products" for 192.168.64.180 at 2019-11-03 18:04:02 -0500
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1557)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/leventince/ShopifyLabs/Courses/Rails/depot/public/packs
+Completed 200 OK in 5531ms (Views: 5525.5ms | ActiveRecord: 1.5ms | Allocations: 1977942)
+
+
+[StatsD] Depot.request_time:5636|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:2|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:10|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:38|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:41|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 18:04:12 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 20.4ms | Allocations: 5799)
+  Rendered products/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 6158)
+Completed 200 OK in 41ms (Views: 30.1ms | ActiveRecord: 1.3ms | Allocations: 16352)
+
+
+[StatsD] Depot.request_time:43|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 18:09:45 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 674)
+[StatsD] Depot.request_time:1|d|#response_code:304,response_type:3xx,environment:development
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.7ms | Allocations: 7581)
+
+
+[StatsD] Depot.request_time:18|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 18:09:48 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 3.1ms | Allocations: 1080)
+  Rendered products/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1165)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 7017)
+
+
+[StatsD] Depot.request_time:17|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-03 18:10:07 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"EO+wcKm1T6s7fbtIAUh7cXeBYxrBA7xdk/+2Rwm1w6AvfpVALt4gOMMdZCCNtdlgBSwvmA8a1igZnHfaz87XBQ==", "product"=>{"title"=>"LG 46", "description"=>"46 inch TV", "image_url"=>"", "price"=>"456.99"}, "commit"=>"Create Product"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO `products` (`title`, `description`, `image_url`, `price`, `created_at`, `updated_at`) VALUES ('LG 46', '46 inch TV', '', 456.99, '2019-11-03 23:10:07.536911', '2019-11-03 23:10:07.536911')[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+Redirected to https://depot.myshopify.io/products/1
+Completed 302 Found in 13ms (ActiveRecord: 5.2ms | Allocations: 2882)
+
+
+[StatsD] Depot.request_time:32|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+[StatsD] Depot.request_content_length:250|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+Started GET "/products/1" for 192.168.64.180 at 2019-11-03 18:10:07 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 325)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.9ms | Allocations: 7301)
+
+
+[StatsD] Depot.request_time:17|d|#controller:products,action:show,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 18:10:13 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 802)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 6641)
+
+
+[StatsD] Depot.request_time:14|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/1" for 192.168.64.180 at 2019-11-03 18:10:17 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 96)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.8ms | Allocations: 6503)
+
+
+[StatsD] Depot.request_time:45|d|#controller:products,action:show,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 18:10:19 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 797)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.6ms | Allocations: 6634)
+
+
+[StatsD] Depot.request_time:14|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started DELETE "/products/1" for 192.168.64.180 at 2019-11-03 18:10:22 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"po2+nvjV3umI8Td2Ynmq78qZyU++olwWeirZkXM3au5HiJmAhAQ1aF1h32r8PmxQn5sWdUKVelTEXQeNiSxNpA==", "id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:57:in `destroy'
+  [1m[36mProduct Destroy (0.6ms)[0m  [1m[31mDELETE FROM `products` WHERE `products`.`id` = 1[0m
+  ↳ app/controllers/products_controller.rb:57:in `destroy'
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:57:in `destroy'
+Redirected to https://depot.myshopify.io/products
+Completed 302 Found in 15ms (ActiveRecord: 10.9ms | Allocations: 2724)
+
+
+[StatsD] Depot.request_time:18|d|#controller:products,action:destroy,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+[StatsD] Depot.request_content_length:132|d|#controller:products,action:destroy,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 18:10:22 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 668)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.6ms | Allocations: 6521)
+
+
+[StatsD] Depot.request_time:13|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 18:35:29 -0500
+[StatsD] Depot.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.7ms | Allocations: 1082)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1167)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 18415)
+
+
+[StatsD] Depot.request_time:54|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 18:35:29 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.7ms | Allocations: 1080)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1165)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7102)
+
+
+[StatsD] Depot.request_time:12|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:3|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:1|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 18:35:32 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.8ms | Allocations: 1080)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1165)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 7076)
+
+
+[StatsD] Depot.request_time:12|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-03 18:35:46 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"sFFrvlfeIgjAtyMggq+1400qJ/fl4AwRfQg86E2eRuhRVEygKw/JiRUnyzwc6HNcGCj4zRnXKlPDf+L0t4Vhog==", "product"=>{"title"=>"LG 46", "description"=>"hgfhfhfh", "image_url"=>"", "price"=>"kjhk"}, "commit"=>"Create Product"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO `products` (`title`, `description`, `image_url`, `price`, `created_at`, `updated_at`) VALUES ('LG 46', 'hgfhfhfh', '', 0.0, '2019-11-03 23:35:46.023883', '2019-11-03 23:35:46.023883')[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+Redirected to https://depot.myshopify.io/products/2
+Completed 302 Found in 8ms (ActiveRecord: 4.2ms | Allocations: 2589)
+
+
+[StatsD] Depot.request_time:11|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+[StatsD] Depot.request_content_length:248|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+Started GET "/products/2" for 192.168.64.180 at 2019-11-03 18:35:46 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 98)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.7ms | Allocations: 6565)
+
+
+[StatsD] Depot.request_time:14|d|#controller:products,action:show,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/" for 192.168.64.180 at 2019-11-03 18:37:17 -0500
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leventince/.gem/ruby/2.6.3/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leventince/.gem/ruby/2.6.3/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.7ms | Allocations: 316)
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 1813)
+
+
+[StatsD] Depot.request_time:210|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:304,response_type:3xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 18:37:26 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 31.8ms | Allocations: 5975)
+Completed 200 OK in 1631ms (Views: 1623.9ms | ActiveRecord: 3.6ms | Allocations: 1965065)
+
+
+[StatsD] Depot.request_time:1639|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 18:37:34 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 12.1ms | Allocations: 3187)
+  Rendered products/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 3546)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 9620)
+
+
+[StatsD] Depot.request_time:25|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 21:09:09 -0500
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.7ms | Allocations: 1483)
+  Rendered products/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1825)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 8738)
+
+
+[StatsD] Depot.request_time:179|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+[StatsD] Depot.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 21:09:14 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1097)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.0ms | Allocations: 7145)
+
+
+[StatsD] Depot.request_time:14|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 21:09:17 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.5ms | Allocations: 1083)
+  Rendered products/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1168)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 7091)
+
+
+[StatsD] Depot.request_time:17|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 21:09:46 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1100)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.8ms | Allocations: 7950)
+
+
+[StatsD] Depot.request_time:15|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-03 21:12:43 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.3ms | Allocations: 1483)
+  Rendered products/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1824)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 7883)
+
+
+[StatsD] Depot.request_time:16|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-03 21:13:00 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"kj7+jIiIUIOQnUNCdF3D72QCp/PIzEVrW/PJtrojtAutr9u8D+M/EGj9nCr4oGH+Fq/rcQbVLx7RkAgrfFigrg==", "product"=>{"title"=>"Sony as", "description"=>"Sony good TV", "image_url"=>"", "price"=>"87"}, "commit"=>"Create Product"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO `products` (`title`, `description`, `image_url`, `price`, `created_at`, `updated_at`) VALUES ('Sony as', 'Sony good TV', '', 87.0, '2019-11-04 02:13:00.688926', '2019-11-04 02:13:00.688926')[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+Redirected to https://depot.myshopify.io/products/3
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms | Allocations: 2874)
+
+
+[StatsD] Depot.request_time:20|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+[StatsD] Depot.request_content_length:258|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+Started GET "/products/3" for 192.168.64.180 at 2019-11-03 21:13:00 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 324)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 7361)
+
+
+[StatsD] Depot.request_time:17|d|#controller:products,action:show,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-03 21:13:03 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 935)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.9ms | Allocations: 6841)
+
+
+[StatsD] Depot.request_time:15|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/" for 192.168.64.180 at 2019-11-04 08:57:55 -0500
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leventince/.gem/ruby/2.6.3/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leventince/.gem/ruby/2.6.3/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 316)
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 1819)
+
+
+[StatsD] Depot.request_time:323|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-04 08:58:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 25.7ms | Allocations: 6073)
+Completed 200 OK in 1920ms (Views: 1911.5ms | ActiveRecord: 3.7ms | Allocations: 1962674)
+
+
+[StatsD] Depot.request_time:1931|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-04 09:03:20 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 17.1ms | Allocations: 3243)
+  Rendered products/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 3602)
+Completed 200 OK in 36ms (Views: 25.5ms | ActiveRecord: 2.1ms | Allocations: 14476)
+
+
+[StatsD] Depot.request_time:83|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-04 09:03:34 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"fSghwMveLSxOtlA2eWUJCYfQX51MvtA9C6OkYVJpaVdCuQTwTLVCv7bWj171mKsY9X0TH4KnukiBwGX8lBJ98g==", "product"=>{"title"=>"Samsung Washer", "description"=>"", "image_url"=>"", "price"=>"55"}, "commit"=>"Create Product"}
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.3ms | Allocations: 1403)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1488)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 8814)
+
+
+[StatsD] Depot.request_time:23|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_content_length:239|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-04 09:04:18 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"K2Z15EeTMzHS50kbjXdKysnTRFh6RPzO2vL9OSiy6o/KY1L6O0LYsAd3oQcTMIx1nNGbYoZz2oxkhSMl0qnNxQ==", "product"=>{"title"=>"Samsung Washer", "description"=>"", "image_url"=>"", "price"=>"55"}, "commit"=>"Create Product"}
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.0ms | Allocations: 1246)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1333)
+Completed 200 OK in 21ms (Views: 9.6ms | ActiveRecord: 2.0ms | Allocations: 12954)
+
+
+[StatsD] Depot.request_time:68|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_content_length:241|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-04 09:04:24 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"hBON49vlqVus5ZfEhTuxWyeUYZ9J1h6/Pm6J2JhknpJlFqr9pzRC2nl1f9gbfHfkcpa+pbXhOP2AGVfEYn+52A==", "product"=>{"title"=>"Samsung Washer", "description"=>"ddddd", "image_url"=>"", "price"=>"55"}, "commit"=>"Create Product"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[36mProduct Create (1.3ms)[0m  [1m[32mINSERT INTO `products` (`title`, `description`, `image_url`, `price`, `created_at`, `updated_at`) VALUES ('Samsung Washer', 'ddddd', '', 55.0, '2019-11-04 14:04:24.890254', '2019-11-04 14:04:24.890254')[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+Redirected to https://depot.myshopify.io/products/4
+Completed 302 Found in 18ms (ActiveRecord: 11.3ms | Allocations: 2792)
+
+
+[StatsD] Depot.request_time:21|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+[StatsD] Depot.request_content_length:250|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+Started GET "/products/4" for 192.168.64.180 at 2019-11-04 09:04:24 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 328)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.8ms | Allocations: 7397)
+
+
+[StatsD] Depot.request_time:17|d|#controller:products,action:show,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products" for 192.168.64.180 at 2019-11-04 09:04:29 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1070)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.9ms | Allocations: 6976)
+
+
+[StatsD] Depot.request_time:17|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/new" for 192.168.64.180 at 2019-11-04 09:05:43 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.9ms | Allocations: 1148)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1234)
+Completed 200 OK in 19ms (Views: 9.6ms | ActiveRecord: 2.0ms | Allocations: 11981)
+
+
+[StatsD] Depot.request_time:89|d|#controller:products,action:new,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-04 09:05:59 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"/h+oyjeSQTPhsOmLNOHLj2wOhBXaBwjXcjYcDJieSL7Bjo36sPkuoBnQNuO4HGmeHqPIlxQeYqL4Vd2RXuVcGw==", "product"=>{"title"=>"BMW X5", "description"=>"Great car", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.8ms | Allocations: 1231)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1316)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 8606)
+
+
+[StatsD] Depot.request_time:15|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_content_length:242|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-04 09:06:08 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"ZjlVXtJa2dOsjpcOkEugAQJNHZXmnQ7WQTyuVIWMqjOHPHJArosyUnkefxIODGa+V0/CrxqqKJT/S3BIf5eNeQ==", "product"=>{"title"=>"BMW X5", "description"=>"Great car", "image_url"=>"", "price"=>"0"}, "commit"=>"Create Product"}
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 3.9ms | Allocations: 1228)
+  Rendered products/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1313)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 8213)
+
+
+[StatsD] Depot.request_time:18|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] Depot.request_content_length:245|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started POST "/products" for 192.168.64.180 at 2019-11-04 09:07:49 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"MqsdmDkBG2bKezWLg1A5PyaFiEh/cZf7VDaEUxx3wrfTrjqGRdDw5x/r3ZcdF/+Ac4dXcoNGsbnqQVpP5mzl/Q==", "product"=>{"title"=>"BMW X5", "description"=>"Great car", "image_url"=>"", "price"=>"2"}, "commit"=>"Create Product"}
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :title attribute in Product model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in create at /Users/leventince/ShopifyLabs/Courses/Rails/depot/app/controllers/products_controller.rb:30)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[36mProduct Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `products` WHERE `products`.`title` = BINARY 'BMW X5' LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO `products` (`title`, `description`, `image_url`, `price`, `created_at`, `updated_at`) VALUES ('BMW X5', 'Great car', '', 2.0, '2019-11-04 14:07:49.586671', '2019-11-04 14:07:49.586671')[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:30:in `block in create'
+Redirected to https://depot.myshopify.io/products/5
+Completed 302 Found in 22ms (ActiveRecord: 7.8ms | Allocations: 8933)
+
+
+[StatsD] Depot.request_time:69|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+[StatsD] Depot.request_content_length:249|d|#controller:products,action:create,request_method:POST,request_format:text/html,response_code:302,response_type:3xx,environment:development
+Started GET "/products/5" for 192.168.64.180 at 2019-11-04 09:07:49 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 6867)
+
+
+[StatsD] Depot.request_time:13|d|#controller:products,action:show,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/products/" for 192.168.64.180 at 2019-11-04 09:50:14 -0500
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6458)
+Completed 200 OK in 1370ms (Views: 1355.1ms | ActiveRecord: 2.3ms | Allocations: 1965102)
+
+
+[StatsD] Depot.request_time:1642|d|#controller:products,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
